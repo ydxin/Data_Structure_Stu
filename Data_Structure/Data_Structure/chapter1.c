@@ -1,6 +1,6 @@
 #include "chapter1.h"
 #include <stdio.h>
-
+#include "public.h"
 /*
 1. 数据元素是数据的基本单位
 2. 树形结构，开始节点 : a   终端节点：b,e,i,g
@@ -61,16 +61,25 @@ void FindMaxAndMin(int *a,int len)
 
 void SumExp(int n,int flag)
 {
+
 	int sum = 0;
+	char *ch;
+	start = clock();
 	if (flag == ADD)
 	{
 		for (int i = 1; i <= n; i++)
 		{
 			sum = sum + i;
 		}
+		ch = "ADD";
 	}
 	if (flag == GAUSS)
 	{
-
+		sum = (1 + n)*n / 2;
+		ch = "GAUSS";
 	}
+	stop = clock();
+	duration = stop - start;
+	printf("%s time is %f", ch, duration);
 }
+

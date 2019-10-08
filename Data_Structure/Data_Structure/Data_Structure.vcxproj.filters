@@ -21,9 +21,21 @@
     <ClCompile Include="chapter1.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="public.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="public.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="chapter2.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
