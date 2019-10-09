@@ -1,6 +1,15 @@
 #ifndef  _LINK_LIST_H_
 #define _LINK_LIST_H_
 
+#define IS_EMPTY		0
+#define NOT_EMPTY	1
+
+#define MAX_SIZE		50
+
+#define FAILED			0
+#define SUCCESS		1
+
+
 typedef int ElemType;
 
 typedef struct LNode
@@ -10,17 +19,17 @@ typedef struct LNode
 }LinkNode;
 
 
-LinkNode* CreateListF(ElemType a[], int n);
-LinkNode* CreateListR(ElemType a[], int n);
-LinkNode* InitList();
-void DestroyList(LinkNode* L);
-int ListEmpty(LinkNode* L);
-int ListLength(LinkNode* L);
-void DispList(LinkNode* L);
-int GetElem(LinkNode* L, int i, ElemType* e);
-int LocateElem(LinkNode* L, ElemType e);
-int ListInsert(LinkNode* L, int i, ElemType e);
-int ListDelete(LinkNode* L, int i, ElemType* e);
+LinkNode* CreateLinkListF(ElemType a[], int n);
+LinkNode* CreateLinkListR(ElemType a[], int n);
+LinkNode* InitLinkList();
+void DestroyLinkList(LinkNode* L);
+int LinkListEmpty(LinkNode* L);
+int LinkListLength(LinkNode* L);
+void DispLinkList(LinkNode* L);
+int GetLinkElem(LinkNode* L, int i, ElemType* e);
+int LocateLinkElem(LinkNode* L, ElemType e);
+int LinkListInsert(LinkNode* L, int i, ElemType e);
+int LinkListDelete(LinkNode* L, int i, ElemType* e);
 
 
 

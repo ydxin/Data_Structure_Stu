@@ -1,7 +1,7 @@
 #ifndef _PUBLIC_H_
 #define _PUBLIC_H_
 
-#include<time.h>
+#include <time.h>
 
 extern clock_t    start, stop; /*  clock_t是clock()函数返回的变量类型  */
  
