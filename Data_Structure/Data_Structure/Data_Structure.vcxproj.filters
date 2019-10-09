@@ -18,24 +18,30 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="chapter1.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="public.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="chapter2.c">
+    <ClCompile Include="linear_list.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="introduction.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="link_list.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="chapter1.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="public.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="chapter2.h">
+    <ClInclude Include="linear_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="introduction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="link_list.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
