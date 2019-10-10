@@ -10,9 +10,7 @@ int main()
 	LinkNode* L1;
 	LinkNode* L2;
 	int a[10] = { 1,2,13,4,5,6,27,8,9,10 };
-	pLink = CreateLinkListR(a,10);
-	pDlink = InitDLinkList();
-	SortLink(pLink);
+	pDlink = CreateDLinkListR(a,10);
 	getch();
 	return 0;
 }

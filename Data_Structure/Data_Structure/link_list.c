@@ -40,10 +40,8 @@ LinkNode* InitLinkList()
 
 void DestroyLinkList(LinkNode* L)
 {
-	LinkNode* s = (LinkNode*)malloc(sizeof(LinkNode));
-	LinkNode* next = (LinkNode*)malloc(sizeof(LinkNode));
-	s = L;
-	next = L->next;
+	LinkNode* s = L;
+	LinkNode* next = L->next;
 	while (next )
 	{
 		free(s);
@@ -61,7 +59,7 @@ int LinkListEmpty(LinkNode* L)
 int LinkListLength(LinkNode* L)
 {
 	int n = 0;
-	LinkNode* s = (LinkNode*)malloc(sizeof(LinkNode));
+	LinkNode* s = L;
 	while (s->next)
 	{
 		n++;
@@ -72,7 +70,7 @@ int LinkListLength(LinkNode* L)
 
 void DispLinkList(LinkNode* L)
 {
-	LinkNode* s = (LinkNode*)malloc(sizeof(LinkNode));
+	LinkNode* s = L->next;
 	s = L->next;
 	while (s)
 	{
@@ -84,8 +82,7 @@ void DispLinkList(LinkNode* L)
 
 int GetLinkElem(LinkNode* L, int i, ElemType* e)
 {
-	LinkNode* s = (LinkNode*)malloc(sizeof(LinkNode));
-	s = L->next;
+	LinkNode* s = L->next;
 	if (i < 0) return FAILED;
 	int n = 1;
 	while (n < i && s)
@@ -105,8 +102,7 @@ int GetLinkElem(LinkNode* L, int i, ElemType* e)
 
 int LocateLinkElem(LinkNode* L, ElemType e)
 {
-	LinkNode* s = (LinkNode*)malloc(sizeof(LinkNode));
-	s = L;
+	LinkNode* s = L;
 	int i = 1;
 	while (s->next && s->data != e)
 	{
@@ -121,15 +117,14 @@ int LocateLinkElem(LinkNode* L, ElemType e)
 int LinkListInsert(LinkNode* L, int i, ElemType e)
 {
 	if (i <= 0) return FAILED;
-	LinkNode* s = (LinkNode*)malloc(sizeof(LinkNode));
-	s = L;
+	LinkNode* s = L;
 	int n = 1;
-	while (n < i && s->next)
+	while (n < i && s )
 	{
 		s = s->next;
 		n++;
 	}
-	if (s->next == NULL) return FAILED;
+	if (!s) return FAILED;
 	else
 	{
 		LinkNode* r = (LinkNode*)malloc(sizeof(LinkNode));
@@ -144,8 +139,7 @@ int LinkListInsert(LinkNode* L, int i, ElemType e)
 int LinkListDelete(LinkNode* L, int i, ElemType* e)
 {
 	if (i <= 0) return FAILED;
-	LinkNode* s = (LinkNode*)malloc(sizeof(LinkNode));
-	s = L;	
+	LinkNode* s = L;
 	int n = 1;
 	while ( n < i && s->next)
 	{
@@ -155,8 +149,7 @@ int LinkListDelete(LinkNode* L, int i, ElemType* e)
 	if (s->next == NULL) return FAILED;
 	else
 	{
-		LinkNode* q = (LinkNode*)malloc(sizeof(LinkNode));
-		q = s->next;
+		LinkNode* q = s->next;
 		s->next = q->next;
 		free(q);
 		return SUCCESS;
