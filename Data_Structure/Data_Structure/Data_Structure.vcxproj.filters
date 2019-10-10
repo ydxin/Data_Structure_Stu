@@ -30,6 +30,9 @@
     <ClCompile Include="link_list.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="double_link_list.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="public.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="link_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="double_link_list.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

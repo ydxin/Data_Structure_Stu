@@ -163,3 +163,61 @@ int LinkListDelete(LinkNode* L, int i, ElemType* e)
 	}
 }
 
+void SplitLink(LinkNode* L,LinkNode** L1,LinkNode** L2)
+{
+	LinkNode* r = L;
+	LinkNode* p= L->next;
+	*L1 = L;
+	*L2 = (LinkNode*)malloc(sizeof(LinkNode));
+	(*L2)->next = NULL;
+	while (p)
+	{
+		r->next = p;
+		r = p;
+		if (!p->next)
+			break;
+		p = p->next->next;
+		r->next->next = (*L2)->next;
+		(*L2)->next = r->next;
+	}
+	r->next = NULL;
+}
+
+void DelMaxLinkNode(LinkNode* L)
+{
+	LinkNode* pre=L;
+	LinkNode* p = L->next;
+	LinkNode* max = L->next;
+	LinkNode* preMax = L;
+	while (p)
+	{
+		if (max->data < p->data)
+		{
+			max = p;
+			preMax = pre;
+		}
+		pre = p;
+		p = p->next;
+	}
+	preMax->next = max->next;
+	free(max);
+}
+
+void SortLink(LinkNode* L)
+{
+	LinkNode* pre = L;
+	LinkNode* p;
+	LinkNode* q;
+	p = L->next->next;
+	L->next->next = NULL;	
+	while (p)
+	{
+		q = p->next;
+		pre = L;
+		while (pre->next && pre->next->data < p->data)
+			pre = pre->next;
+		p->next = pre->next;
+		pre->next = p;
+		p = q;
+	}
+}

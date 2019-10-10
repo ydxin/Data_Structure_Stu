@@ -1,15 +1,18 @@
 #include "introduction.h"
 #include "linear_list.h"
 #include "link_list.h"
+#include "double_link_list.h"
 int main()
 {
-	SqList* pSql;
 	LinkNode* pLink;
-	int a[10] = { 4,2,5,16,3,53,12,32,53,43 };
+	DLinkNode* pDlink;
+	
+	LinkNode* L1;
+	LinkNode* L2;
+	int a[10] = { 1,2,13,4,5,6,27,8,9,10 };
 	pLink = CreateLinkListR(a,10);
-	LinkListInsert(pLink, 3, 100);
-	pSql =CreateList( a, 10);
-	OddToEven(pSql);
+	pDlink = InitDLinkList();
+	SortLink(pLink);
 	getch();
 	return 0;
 }

@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="double_link_list.c" />
     <ClCompile Include="introduction.c" />
     <ClCompile Include="linear_list.c" />
     <ClCompile Include="link_list.c" />
@@ -122,6 +123,7 @@
     <ClCompile Include="public.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="double_link_list.h" />
     <ClInclude Include="introduction.h" />
     <ClInclude Include="linear_list.h" />
     <ClInclude Include="link_list.h" />

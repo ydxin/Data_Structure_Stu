@@ -30,7 +30,7 @@ int GetLinkElem(LinkNode* L, int i, ElemType* e);
 int LocateLinkElem(LinkNode* L, ElemType e);
 int LinkListInsert(LinkNode* L, int i, ElemType e);
 int LinkListDelete(LinkNode* L, int i, ElemType* e);
-
-
-
+void SplitLink(LinkNode* L, LinkNode** L1, LinkNode** L2);
+void DelMaxLinkNode(LinkNode* L);
+void SortLink(LinkNode* L);
 #endif // ! _LINK_LIST_H_
