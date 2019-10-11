@@ -153,5 +153,61 @@ int DLinkListInsert(DLinkNode* L, int i, int e)
 
 int DLinkListDelete(DLinkNode* L, int i, int* e)
 {
+	if (i < 1) return FAILED;
+	int j = 1; 
+	DLinkNode* p = L;
+	DLinkNode* q;
+	while (j < i && p)
+	{
+		j++;
+		p = p->next;
+	}
+	q = p->next;
+	if (q) return FAILED;
+	p->next = q->next;
+	if (p->next)
+		p->next->prior = q;
+	free(p);
+	return SUCCESS;
+}
+
+void DlinkReverse(DLinkNode* L)
+{
+	DLinkNode* p = L->next;
+	DLinkNode* q;
+	L->next = NULL;
+	while (p)
+	{
+		q = p->next;
+		p->next = L->next;
+		if (L->next)
+			L->next->prior = p;
+		L->next = p;
+		p->prior = L;
+		p = q;
+	}
+}
+
+void SortDlink(DLinkNode* L)
+{
+	DLinkNode* pre;
+	DLinkNode* q;
+	DLinkNode* p = L->next->next;
+	L->next->next = NULL;	
+	while (p)
+	{
+		pre = L;
+		q = p->next;
+		while (pre->next && pre->next->data < p->data)
+			pre = pre->next;
+		p->next = pre->next;
+		p->prior = pre;
+		if (pre->next)
+			pre->next ->prior= p;
+		pre->next = p;
+		p = q;
+		
+
+	}
 
 }

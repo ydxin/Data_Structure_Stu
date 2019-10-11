@@ -24,7 +24,8 @@ int GetDLinkElem(DLinkNode* L, int i, int* e);
 int LocateDLinkElem(DLinkNode* L, int e);
 int DLinkListInsert(DLinkNode* L, int i, int e);
 int DLinkListDelete(DLinkNode* L, int i, int* e);
-
+void DlinkReverse(DLinkNode* L);
+void SortDlink(DLinkNode* L);
 
 
 #endif // !_DOUBLE_LINK_LIST_H_

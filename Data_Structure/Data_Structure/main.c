@@ -6,11 +6,15 @@ int main()
 {
 	LinkNode* pLink;
 	DLinkNode* pDlink;
-	
 	LinkNode* L1;
 	LinkNode* L2;
 	int a[10] = { 1,2,13,4,5,6,27,8,9,10 };
 	pDlink = CreateDLinkListR(a,10);
+	DispDLinkList(pDlink);
+	DlinkReverse(pDlink);
+	DispDLinkList(pDlink);
+	SortDlink(pDlink);
+	DispDLinkList(pDlink);
 	getch();
 	return 0;
 }
