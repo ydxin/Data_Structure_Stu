@@ -8,9 +8,15 @@
 #include "ordered_list.h"
 int main()
 {
-	
-	int a[5] = { 1,2,3,4,5 };
-	CreateOLinkNode(a, 5);
+	OLinkNode* pOLink;
+	int a[5] = { 5,14,33,52,1 };
+	pOLink=CreateOLinkNode(a, 5);
+	DispOLinkList(pOLink);
+	OLinkListInsert(pOLink, 10);
+	OLinkListInsert(pOLink, 2);
+	OLinkListInsert(pOLink, 120);
+	DispOLinkList(pOLink);
+	DestroyOLinkList(pOLink);
 	system("pause");
 	return 0;
 }

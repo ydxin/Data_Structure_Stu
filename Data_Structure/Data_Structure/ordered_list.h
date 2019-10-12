@@ -12,6 +12,8 @@ typedef struct OLNode
 }OLinkNode;
 
 OLinkNode* CreateOLinkNode(int  a[], int n);
-
-
+void DispOLinkList(OLinkNode* L);
+void DestroyOLinkList(OLinkNode* L);
+void  OLinkListInsert(OLinkNode* L, int  e);
+OLinkNode* UnionOLinkList(OLinkNode* L1, OLinkNode* L2);
 #endif // ! _ORDERED_LIST_H_
