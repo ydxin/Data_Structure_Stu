@@ -115,18 +115,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="circular_link_list.c" />
     <ClCompile Include="double_link_list.c" />
     <ClCompile Include="introduction.c" />
     <ClCompile Include="linear_list.c" />
     <ClCompile Include="link_list.c" />
+    <ClCompile Include="list_app.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="public.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="circular_link_list.h" />
     <ClInclude Include="double_link_list.h" />
     <ClInclude Include="introduction.h" />
     <ClInclude Include="linear_list.h" />
     <ClInclude Include="link_list.h" />
+    <ClInclude Include="list_app.h" />
     <ClInclude Include="public.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

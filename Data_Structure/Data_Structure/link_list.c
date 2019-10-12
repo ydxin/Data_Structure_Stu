@@ -4,10 +4,11 @@
 LinkNode* CreateLinkListF(ElemType a[], int n)
 {
 	LinkNode* L = (LinkNode*)malloc(sizeof(LinkNode));
+	LinkNode* s;
 	L->next = NULL;
 	for (int i = 0; i < n; i++)
 	{
-		LinkNode* s = (LinkNode*)malloc(sizeof(LinkNode));
+		s = (LinkNode*)malloc(sizeof(LinkNode));
 		s->data = a[i];
 		s->next = L->next;
 		L->next = s;
@@ -18,11 +19,11 @@ LinkNode* CreateLinkListF(ElemType a[], int n)
 LinkNode* CreateLinkListR(ElemType a[], int n)
 {
 	LinkNode* L = (LinkNode*)malloc(sizeof(LinkNode));
-	LinkNode* r = (LinkNode*)malloc(sizeof(LinkNode));
-	r = L;
+	LinkNode* r = L;
+	LinkNode* s;
 	for (int i = 0; i < n; i++)
 	{
-		LinkNode* s= (LinkNode*)malloc(sizeof(LinkNode));
+		s= (LinkNode*)malloc(sizeof(LinkNode));
 		s->data = a[i];
 		r->next = s;
 		r = s;
@@ -118,6 +119,7 @@ int LinkListInsert(LinkNode* L, int i, ElemType e)
 {
 	if (i <= 0) return FAILED;
 	LinkNode* s = L;
+	LinkNode* r;
 	int n = 1;
 	while (n < i && s )
 	{
@@ -127,7 +129,7 @@ int LinkListInsert(LinkNode* L, int i, ElemType e)
 	if (!s) return FAILED;
 	else
 	{
-		LinkNode* r = (LinkNode*)malloc(sizeof(LinkNode));
+		r = (LinkNode*)malloc(sizeof(LinkNode));
 		r->data = e;
 		r->next = s->next;
 		s->next = r;
@@ -140,6 +142,7 @@ int LinkListDelete(LinkNode* L, int i, ElemType* e)
 {
 	if (i <= 0) return FAILED;
 	LinkNode* s = L;
+	LinkNode* q;
 	int n = 1;
 	while ( n < i && s->next)
 	{
@@ -149,7 +152,7 @@ int LinkListDelete(LinkNode* L, int i, ElemType* e)
 	if (s->next == NULL) return FAILED;
 	else
 	{
-		LinkNode* q = s->next;
+		q = s->next;
 		s->next = q->next;
 		free(q);
 		return SUCCESS;

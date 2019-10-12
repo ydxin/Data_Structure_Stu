@@ -4,11 +4,12 @@
 DLinkNode* CreateDLinkListF(int  a[], int n)
 {
 	DLinkNode* L = (DLinkNode*)malloc(sizeof(DLinkNode));
+	DLinkNode* s;
 	L->next = NULL;
 	L->prior = NULL;
 	for (int i = 0; i < n; i++)
 	{
-		DLinkNode* s = (DLinkNode*)malloc(sizeof(DLinkNode));
+		s = (DLinkNode*)malloc(sizeof(DLinkNode));
 		s->data = a[i];
 		s->next = L->next;
 		s->prior = L;
@@ -23,12 +24,13 @@ DLinkNode* CreateDLinkListR(int a[], int n)
 {
 	DLinkNode* L = (DLinkNode*)malloc(sizeof(DLinkNode));
 	DLinkNode* r = L ;
+	DLinkNode* s;
 	DLinkNode* p;
 	L->next = NULL;
 	L->prior = NULL;
 	for (int i = 0; i < n; i++)
 	{
-		DLinkNode* s = (DLinkNode*)malloc(sizeof(DLinkNode));
+		s = (DLinkNode*)malloc(sizeof(DLinkNode));
 		s->data = a[i];
 		r->next = s;
 		s->prior = r;
@@ -44,8 +46,7 @@ DLinkNode* InitDLinkList()
 {
 	DLinkNode* L;
 	L = (DLinkNode*)malloc(sizeof(DLinkNode));
-	if (!L)
-		return FAILED;
+	if (!L)  return FAILED;
 	L->prior = NULL;
 	L->next = NULL;
 	return L;
@@ -120,7 +121,7 @@ int LocateDLinkElem(DLinkNode* L, int e)
 		s = s->next;
 		i++;
 	}
-	if (s->next == NULL) return FAILED;
+	if (!s->next) return FAILED;
 	else return i;
 }
 
@@ -129,6 +130,7 @@ int DLinkListInsert(DLinkNode* L, int i, int e)
 	if (i < 0)  return FAILED;
 	int j = 0;
 	DLinkNode* s = L;
+	DLinkNode* r;
 	s = L;
 	int n = 1;
 	while (n < i && s)
@@ -139,7 +141,7 @@ int DLinkListInsert(DLinkNode* L, int i, int e)
 	if (!s ) return FAILED;
 	else
 	{
-		DLinkNode* r = (DLinkNode*)malloc(sizeof(DLinkNode));
+		r = (DLinkNode*)malloc(sizeof(DLinkNode));
 		r->data = e;
 		r->next = s->next;
 		r->prior = s;
@@ -155,18 +157,17 @@ int DLinkListDelete(DLinkNode* L, int i, int* e)
 {
 	if (i < 1) return FAILED;
 	int j = 1; 
-	DLinkNode* p = L;
+	DLinkNode* p = L->next;
 	DLinkNode* q;
 	while (j < i && p)
 	{
 		j++;
 		p = p->next;
 	}
-	q = p->next;
-	if (q) return FAILED;
-	p->next = q->next;
+	if (!p)  return FAILED;
+	p->prior->next = p->next;
 	if (p->next)
-		p->next->prior = q;
+		p->next->prior = p->prior;
 	free(p);
 	return SUCCESS;
 }
@@ -206,8 +207,5 @@ void SortDlink(DLinkNode* L)
 			pre->next ->prior= p;
 		pre->next = p;
 		p = q;
-		
-
 	}
-
 }
