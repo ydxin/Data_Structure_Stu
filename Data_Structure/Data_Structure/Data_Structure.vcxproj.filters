@@ -19,6 +19,12 @@
     <Filter Include="源文件\Chapter2">
       <UniqueIdentifier>{292a14c6-8409-4626-a614-dd944ec15827}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Chapter3">
+      <UniqueIdentifier>{9802fdbd-46da-4158-aef3-5ba9a6d13afd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Chapter3">
+      <UniqueIdentifier>{cdc69c91-36ad-4228-b770-df2241ce64e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circular_link_list.h">
