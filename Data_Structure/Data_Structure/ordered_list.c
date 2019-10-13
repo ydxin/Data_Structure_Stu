@@ -65,5 +65,49 @@ void  OLinkListInsert(OLinkNode* L, int  e)
 
 OLinkNode* UnionOLinkList(OLinkNode* L1, OLinkNode* L2)
 {
-
+	OLinkNode* L = (OLinkNode*)malloc(sizeof(OLinkNode));
+	OLinkNode* p1 = L1->next;
+	OLinkNode* p2 = L2->next;
+	OLinkNode* s;
+	OLinkNode* r = L;
+	while (p1 && p2)
+	{
+		s = (OLinkNode*)malloc(sizeof(OLinkNode));
+		if (p1->data >= p2->data)
+		{
+			s->data = p2->data;
+			p2 = p2->next;
+		}
+		else
+		{
+			s->data = p1->data;
+			p1 = p1->next;
+		}
+		r->next = s;
+		r = s;
+	}
+	if (!p1)
+	{
+		while (p2)
+		{
+			s = (OLinkNode*)malloc(sizeof(OLinkNode));
+			s->data = p2->data;
+			r->next = s;
+			r = s;
+			p2 = p2->next;
+		}
+	}
+	else
+	{
+		while (p1)
+		{
+			s = (OLinkNode*)malloc(sizeof(OLinkNode));
+			s->data = p1->data;
+			r->next = s;
+			r = s;
+			p1 = p1->next;
+		}
+	}
+	r->next = NULL;
+	return L;
 }
