@@ -47,9 +47,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="chapter1.c">
-      <Filter>源文件\Chapter2</Filter>
-    </ClCompile>
     <ClCompile Include="circular_link_list.c">
       <Filter>源文件\Chapter2</Filter>
     </ClCompile>

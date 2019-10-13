@@ -82,7 +82,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -125,7 +125,6 @@
     <ClInclude Include="public.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="chapter1.c" />
     <ClCompile Include="circular_link_list.c" />
     <ClCompile Include="double_link_list.c" />
     <ClCompile Include="introduction.c" />
