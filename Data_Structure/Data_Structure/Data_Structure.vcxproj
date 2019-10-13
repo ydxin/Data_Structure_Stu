@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{DB740B49-00A1-4D6B-BB1C-E3F7407B9D96}</ProjectGuid>
+    <ProjectGuid>{733E09E7-0B2C-4177-9DBE-D7CC80831DBB}</ProjectGuid>
     <RootNamespace>DataStructure</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -28,13 +28,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -82,7 +82,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>false</SDLCheck>
+      <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -115,6 +115,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="circular_link_list.h" />
+    <ClInclude Include="double_link_list.h" />
+    <ClInclude Include="introduction.h" />
+    <ClInclude Include="linear_list.h" />
+    <ClInclude Include="link_list.h" />
+    <ClInclude Include="list_app.h" />
+    <ClInclude Include="ordered_list.h" />
+    <ClInclude Include="public.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="chapter1.c" />
     <ClCompile Include="circular_link_list.c" />
     <ClCompile Include="double_link_list.c" />
     <ClCompile Include="introduction.c" />
@@ -124,20 +135,6 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="ordered_list.c" />
     <ClCompile Include="public.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="circular_link_list.h" />
-    <ClInclude Include="double_link_list.h" />
-    <ClInclude Include="introduction.h" />
-    <ClInclude Include="linear_list.h" />
-    <ClInclude Include="link_list.h" />
-    <ClInclude Include="list_app.h" />
-    <ClInclude Include="ordered_list.h" />
-    <ClInclude Include="public.h" />
-    <ClInclude Include="resource.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Data_Structure.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,14 +13,43 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\Chapter2">
-      <UniqueIdentifier>{b63f0e86-02bd-4ba6-84d8-3e5427bef804}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\Chapter2">
-      <UniqueIdentifier>{53aba30d-d969-499c-8ab7-da200c73d8b2}</UniqueIdentifier>
+      <UniqueIdentifier>{d5e220ce-bbe5-45ad-adfb-11f27181d6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Chapter2">
+      <UniqueIdentifier>{292a14c6-8409-4626-a614-dd944ec15827}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="circular_link_list.h">
+      <Filter>头文件\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="double_link_list.h">
+      <Filter>头文件\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="introduction.h">
+      <Filter>头文件\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="linear_list.h">
+      <Filter>头文件\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="link_list.h">
+      <Filter>头文件\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="list_app.h">
+      <Filter>头文件\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="ordered_list.h">
+      <Filter>头文件\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="public.h">
+      <Filter>头文件\Chapter2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="chapter1.c">
+      <Filter>源文件\Chapter2</Filter>
+    </ClCompile>
     <ClCompile Include="circular_link_list.c">
       <Filter>源文件\Chapter2</Filter>
     </ClCompile>
@@ -48,39 +77,5 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="circular_link_list.h">
-      <Filter>头文件\Chapter2</Filter>
-    </ClInclude>
-    <ClInclude Include="double_link_list.h">
-      <Filter>头文件\Chapter2</Filter>
-    </ClInclude>
-    <ClInclude Include="introduction.h">
-      <Filter>头文件\Chapter2</Filter>
-    </ClInclude>
-    <ClInclude Include="linear_list.h">
-      <Filter>头文件\Chapter2</Filter>
-    </ClInclude>
-    <ClInclude Include="link_list.h">
-      <Filter>头文件\Chapter2</Filter>
-    </ClInclude>
-    <ClInclude Include="list_app.h">
-      <Filter>头文件\Chapter2</Filter>
-    </ClInclude>
-    <ClInclude Include="ordered_list.h">
-      <Filter>头文件\Chapter2</Filter>
-    </ClInclude>
-    <ClInclude Include="public.h">
-      <Filter>头文件\Chapter2</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>资源文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Data_Structure.rc">
-      <Filter>资源文件</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>
