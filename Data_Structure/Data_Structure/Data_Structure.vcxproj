@@ -123,6 +123,7 @@
     <ClInclude Include="list_app.h" />
     <ClInclude Include="ordered_list.h" />
     <ClInclude Include="public.h" />
+    <ClInclude Include="stack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="circular_link_list.c" />
@@ -134,6 +135,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="ordered_list.c" />
     <ClCompile Include="public.c" />
+    <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

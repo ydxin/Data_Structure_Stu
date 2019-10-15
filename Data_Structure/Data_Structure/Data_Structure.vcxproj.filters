@@ -51,6 +51,9 @@
     <ClInclude Include="public.h">
       <Filter>头文件\Chapter2</Filter>
     </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>头文件\Chapter3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="circular_link_list.c">
@@ -79,6 +82,9 @@
     </ClCompile>
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.cpp">
+      <Filter>源文件\Chapter3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
