@@ -83,7 +83,7 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stack.cpp">
+    <ClCompile Include="stack.c">
       <Filter>源文件\Chapter3</Filter>
     </ClCompile>
   </ItemGroup>
