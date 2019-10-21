@@ -1,10 +1,11 @@
 #include "stack.h"
 #include <stdlib.h>
-
+#include <stdio.h>
 StackType* InitStack()
 {
 	StackType* s = (StackType*)malloc(sizeof(StackType));
 	s->top = -1;
+	return s;
 }
 
 void DestroyStack(StackType* s)
@@ -62,5 +63,73 @@ int JudgeSym(ElemType * str)
 
 void Trans(ElemType* exp, ElemType postExp[])
 {
-
+	SqStack* pExp = InitStack();
+ 	char e = '0';
+	int i = 0;
+	while (*exp != '\0')
+	{
+		switch (*exp)
+		{
+		case '(':
+			Push(pExp, *exp);
+			exp++;
+			break;
+		case ')':
+			Pop(pExp, &e);
+			while (e != '(')
+			{
+				postExp[i++] = e;
+				Pop(pExp,& e);				
+			}
+			exp++;
+			break;
+		case '+':
+		case '-' :
+			while (!StackEmpty(pExp))
+			{
+				GetTop(pExp, &e);
+				if (e != '(')
+				{
+					Pop(pExp, &postExp[i]);
+					i++;
+				}					
+				else
+					break;
+			} 
+			Push(pExp, *exp);
+			exp++;
+			break;
+		case '*':
+		case '/':
+			while (!StackEmpty(pExp))
+			{
+				GetTop(pExp, &e); 
+				if (e == '*' || e == '/')
+				{
+					Pop(pExp, &postExp[i]);
+					i++;
+				}
+				else
+					break;				
+			}
+			Push(pExp, *exp);
+			exp++;
+			break;
+		default:
+			while ((*exp >= '0') && (*exp <= '9'))
+			{
+				postExp[i++] = *exp;
+				exp++;
+			}
+			postExp[i++] = '#';
+			break;
+		}
+	}
+	while (!StackEmpty(pExp))
+	{
+		Pop(pExp, &postExp[i]);
+		i++;
+	}
+	postExp[i++] = '\0';
+	DestroyStack(pExp);
 }

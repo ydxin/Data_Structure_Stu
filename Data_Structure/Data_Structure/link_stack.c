@@ -81,3 +81,4 @@ int MatchBrackets(ElemType* ch)
 	DestroyLinkStack(s);
 	return match;
 }
+

@@ -21,7 +21,7 @@ int Push(StackType* s, ElemType e);
 int Pop(StackType* s, ElemType* e);
 int GetTop(StackType* s, ElemType* e);
 int JudgeSym(ElemType * str);
-
+void Trans(ElemType* exp, ElemType postExp[]);
 
 
 
