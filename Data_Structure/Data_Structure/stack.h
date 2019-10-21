@@ -4,13 +4,14 @@
 #define MAX_SIZE	50
 #define FAILED		-1
 #define SUCCESS	0
+
 typedef char ElemType;
+
 typedef struct SqStack
 {
 	ElemType data[MAX_SIZE];
 	int top;
 }SqStack;
-
 
 typedef SqStack StackType;
 StackType* InitStack();

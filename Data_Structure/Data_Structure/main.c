@@ -1,4 +1,5 @@
 #include <Windows.h>
+#include <stdbool.h>
 #include "introduction.h"
 //#include "linear_list.h"
 //#include "link_list.h"
@@ -7,14 +8,11 @@
 #include "list_app.h"
 #include "ordered_list.h"
 #include "stack.h"
+#include "link_stack.h"
 int main()
 {
-	ElemType* str = "abcdcba";
-	int a = JudgeSym(str);
-	if (a == SUCCESS) printf("success");
-	else printf("failed");
-
-
+	char* ch = "dsa(((((sfsad))))";
+	bool a = MatchBrackets(ch);
 
 	system("pause");
 	return 0;

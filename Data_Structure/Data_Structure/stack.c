@@ -59,3 +59,8 @@ int JudgeSym(ElemType * str)
 	return SUCCESS;
 
 }
+
+void Trans(ElemType* exp, ElemType postExp[])
+{
+
+}
