@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -115,28 +115,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="app_stack.h" />
     <ClInclude Include="circular_link_list.h" />
     <ClInclude Include="double_link_list.h" />
     <ClInclude Include="introduction.h" />
     <ClInclude Include="linear_list.h" />
     <ClInclude Include="link_list.h" />
+    <ClInclude Include="link_queue.h" />
     <ClInclude Include="link_stack.h" />
     <ClInclude Include="list_app.h" />
     <ClInclude Include="ordered_list.h" />
     <ClInclude Include="public.h" />
+    <ClInclude Include="sqQueue.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="app_stack.c" />
     <ClCompile Include="circular_link_list.c" />
     <ClCompile Include="double_link_list.c" />
     <ClCompile Include="introduction.c" />
     <ClCompile Include="linear_list.c" />
     <ClCompile Include="link_list.c" />
+    <ClCompile Include="link_queue.c" />
     <ClCompile Include="link_stack.c" />
     <ClCompile Include="list_app.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="ordered_list.c" />
     <ClCompile Include="public.c" />
+    <ClCompile Include="sqQueue.c" />
     <ClCompile Include="stack.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

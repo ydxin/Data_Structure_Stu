@@ -133,3 +133,65 @@ void Trans(ElemType* exp, ElemType postExp[])
 	postExp[i++] = '\0';
 	DestroyStack(pExp);
 }
+
+void CompValue(char * postExp)
+{
+	double a, b, c, d;
+	//这里使用的栈要将ElemType设置成double型，
+	//因为要进行数值计算
+	SqStack* Opnd = InitStack();
+	;
+	//
+	while (*postExp != '\0')
+	{
+		switch ( *postExp)
+		{
+		case '+':
+			Pop(Opnd, &a);
+			Pop(Opnd, &b);
+			c = b + a;
+			Push(Opnd, c);
+			break;
+		case '-':
+			Pop(Opnd, &a);
+			Pop(Opnd, &b);
+			c = b - a;
+			Push(Opnd, c);
+			break;
+		case '*':
+			Pop(Opnd, &a);
+			Pop(Opnd, &b);
+			c = b * a;
+			Push(Opnd, c);
+			break;
+		case '/':
+			Pop(Opnd, &a);
+			Pop(Opnd, &b);
+			if (a != '/')
+			{
+				c = b / a;
+				Push(Opnd, c);
+				break;
+			}
+			else
+			{
+				printf("error !");
+				exit(0);
+			}
+			break;
+		default:
+			d = 0;
+			while (*postExp >= '0' && *postExp <= '9')
+			{
+				d = 10 * d + (*postExp - '0');
+				postExp++;
+			}
+			Push(Opnd, d);		
+			break;
+		}
+		postExp++;
+	}
+	GetTop(Opnd, &a);
+	return a;
+	return a;
+}

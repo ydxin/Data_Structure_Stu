@@ -57,6 +57,15 @@
     <ClInclude Include="link_stack.h">
       <Filter>头文件\Chapter3</Filter>
     </ClInclude>
+    <ClInclude Include="app_stack.h">
+      <Filter>头文件\Chapter3</Filter>
+    </ClInclude>
+    <ClInclude Include="sqQueue.h">
+      <Filter>头文件\Chapter3</Filter>
+    </ClInclude>
+    <ClInclude Include="link_queue.h">
+      <Filter>头文件\Chapter3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="circular_link_list.c">
@@ -90,6 +99,15 @@
       <Filter>源文件\Chapter3</Filter>
     </ClCompile>
     <ClCompile Include="link_stack.c">
+      <Filter>源文件\Chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="app_stack.c">
+      <Filter>源文件\Chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="sqQueue.c">
+      <Filter>源文件\Chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="link_queue.c">
       <Filter>源文件\Chapter3</Filter>
     </ClCompile>
   </ItemGroup>
