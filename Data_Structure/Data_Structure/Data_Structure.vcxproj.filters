@@ -25,6 +25,18 @@
     <Filter Include="源文件\Chapter3">
       <UniqueIdentifier>{cdc69c91-36ad-4228-b770-df2241ce64e3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Chapter4">
+      <UniqueIdentifier>{556b92fc-ff17-450f-9d91-c6369071165e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Chapter4">
+      <UniqueIdentifier>{1cbc9b73-cde8-4e81-89ec-09eebe6e7bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Chapter5">
+      <UniqueIdentifier>{ed40068b-599c-42ac-8b63-7552f94211bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Chapter5">
+      <UniqueIdentifier>{f6f0766e-1b79-461a-a1ce-bac57a4aee23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circular_link_list.h">
@@ -65,6 +77,12 @@
     </ClInclude>
     <ClInclude Include="link_queue.h">
       <Filter>头文件\Chapter3</Filter>
+    </ClInclude>
+    <ClInclude Include="sq_string.h">
+      <Filter>头文件\Chapter4</Filter>
+    </ClInclude>
+    <ClInclude Include="recursion.h">
+      <Filter>头文件\Chapter5</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +127,12 @@
     </ClCompile>
     <ClCompile Include="link_queue.c">
       <Filter>源文件\Chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="sq_string.c">
+      <Filter>源文件\Chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="recursion.c">
+      <Filter>源文件\Chapter5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

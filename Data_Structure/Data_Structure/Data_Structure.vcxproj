@@ -126,7 +126,9 @@
     <ClInclude Include="list_app.h" />
     <ClInclude Include="ordered_list.h" />
     <ClInclude Include="public.h" />
+    <ClInclude Include="recursion.h" />
     <ClInclude Include="sqQueue.h" />
+    <ClInclude Include="sq_string.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>
   <ItemGroup>
@@ -142,7 +144,9 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="ordered_list.c" />
     <ClCompile Include="public.c" />
+    <ClCompile Include="recursion.c" />
     <ClCompile Include="sqQueue.c" />
+    <ClCompile Include="sq_string.c" />
     <ClCompile Include="stack.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

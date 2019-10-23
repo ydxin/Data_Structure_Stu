@@ -1,14 +1,14 @@
 #include <Windows.h>
 #include <stdbool.h>
 #include "link_queue.h"
-
-void PrintString(ch);
+#include "recursion.h"
+void PrintString(char *ch);
 
 int main()
 {
-
 	
 
+	
 	system("pause");
 	return 0;
 }
