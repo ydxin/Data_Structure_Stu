@@ -6,9 +6,7 @@ void PrintString(char *ch);
 
 int main()
 {
-	
-
-	
+	int a = 	StepNums(3);
 	system("pause");
 	return 0;
 }

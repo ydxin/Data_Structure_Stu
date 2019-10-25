@@ -37,6 +37,12 @@
     <Filter Include="源文件\Chapter5">
       <UniqueIdentifier>{f6f0766e-1b79-461a-a1ce-bac57a4aee23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Chapter6">
+      <UniqueIdentifier>{be429162-1b59-4e1b-a167-e9684d79dff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Chapter6">
+      <UniqueIdentifier>{6acbde42-7997-4e33-aa11-37370c195a35}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circular_link_list.h">
