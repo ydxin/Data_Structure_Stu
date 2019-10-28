@@ -2,11 +2,12 @@
 #include <stdbool.h>
 #include "link_queue.h"
 #include "recursion.h"
+#include "array.h"
 void PrintString(char *ch);
 
 int main()
 {
-	int a = 	StepNums(3);
+	Josephus(8, 4);
 	system("pause");
 	return 0;
 }

@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="app_stack.h" />
+    <ClInclude Include="array.h" />
     <ClInclude Include="circular_link_list.h" />
     <ClInclude Include="double_link_list.h" />
     <ClInclude Include="introduction.h" />
@@ -133,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="app_stack.c" />
+    <ClCompile Include="array.c" />
     <ClCompile Include="circular_link_list.c" />
     <ClCompile Include="double_link_list.c" />
     <ClCompile Include="introduction.c" />

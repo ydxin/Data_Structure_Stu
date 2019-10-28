@@ -90,6 +90,9 @@
     <ClInclude Include="recursion.h">
       <Filter>头文件\Chapter5</Filter>
     </ClInclude>
+    <ClInclude Include="array.h">
+      <Filter>头文件\Chapter6</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="circular_link_list.c">
@@ -139,6 +142,9 @@
     </ClCompile>
     <ClCompile Include="recursion.c">
       <Filter>源文件\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="array.c">
+      <Filter>源文件\Chapter6</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
