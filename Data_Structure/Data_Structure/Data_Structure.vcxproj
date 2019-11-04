@@ -131,6 +131,7 @@
     <ClInclude Include="sqQueue.h" />
     <ClInclude Include="sq_string.h" />
     <ClInclude Include="stack.h" />
+    <ClInclude Include="tree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="app_stack.c" />
@@ -150,6 +151,7 @@
     <ClCompile Include="sqQueue.c" />
     <ClCompile Include="sq_string.c" />
     <ClCompile Include="stack.c" />
+    <ClCompile Include="tree.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
