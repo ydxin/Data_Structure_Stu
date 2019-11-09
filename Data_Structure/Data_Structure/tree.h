@@ -20,6 +20,6 @@ typedef struct HCode
 
 
 void CreateHT(HTNode ht[], int n0);
-void CreateHCode(HTNode ht[],HCode hcd[],int n0)
+void CreateHCode(HTNode ht[], HCode hcd[], int n0);
 
 #endif // ! _TREE_H_
