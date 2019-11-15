@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -129,6 +129,7 @@
     <ClInclude Include="ordered_list.h" />
     <ClInclude Include="public.h" />
     <ClInclude Include="recursion.h" />
+    <ClInclude Include="search.h" />
     <ClInclude Include="sqQueue.h" />
     <ClInclude Include="sq_string.h" />
     <ClInclude Include="stack.h" />
@@ -150,6 +151,7 @@
     <ClCompile Include="ordered_list.c" />
     <ClCompile Include="public.c" />
     <ClCompile Include="recursion.c" />
+    <ClCompile Include="search.c" />
     <ClCompile Include="sqQueue.c" />
     <ClCompile Include="sq_string.c" />
     <ClCompile Include="stack.c" />

@@ -55,6 +55,12 @@
     <Filter Include="源文件\Chapter8">
       <UniqueIdentifier>{7f3279df-a30e-4254-a1ed-23885774b810}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Chapter9">
+      <UniqueIdentifier>{b3d519ac-1031-4951-94d9-6d56234bc28c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Chapter9">
+      <UniqueIdentifier>{412023fe-5657-4dd1-a4d0-4f0e25a19ded}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circular_link_list.h">
@@ -110,6 +116,9 @@
     </ClInclude>
     <ClInclude Include="graph.h">
       <Filter>头文件\Chapter8</Filter>
+    </ClInclude>
+    <ClInclude Include="search.h">
+      <Filter>头文件\Chapter9</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +178,9 @@
     </ClCompile>
     <ClCompile Include="graph.c">
       <Filter>源文件\Chapter8</Filter>
+    </ClCompile>
+    <ClCompile Include="search.c">
+      <Filter>源文件\Chapter9</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
