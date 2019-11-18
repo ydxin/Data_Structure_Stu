@@ -130,6 +130,7 @@
     <ClInclude Include="public.h" />
     <ClInclude Include="recursion.h" />
     <ClInclude Include="search.h" />
+    <ClInclude Include="sort.h" />
     <ClInclude Include="sqQueue.h" />
     <ClInclude Include="sq_string.h" />
     <ClInclude Include="stack.h" />
@@ -152,6 +153,7 @@
     <ClCompile Include="public.c" />
     <ClCompile Include="recursion.c" />
     <ClCompile Include="search.c" />
+    <ClCompile Include="sort.c" />
     <ClCompile Include="sqQueue.c" />
     <ClCompile Include="sq_string.c" />
     <ClCompile Include="stack.c" />
